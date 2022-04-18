@@ -1,0 +1,6 @@
+- [ ] course outline
+- [ ] getting students onboarded into google classroom
+- [ ] send a demo assignments so student can practice participation
+- [ ] pre-course qa session to answer any student queries regarding this course
+- [ ] pre-course onboarding to install needed softwares and how to get started (i.e. creating filels)
+- [ ] distribution of free course materials, related youtube channels, websites and blogs
