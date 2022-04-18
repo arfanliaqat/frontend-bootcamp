@@ -4,3 +4,4 @@
 - [ ] pre-course qa session to answer any student queries regarding this course
 - [ ] pre-course onboarding to install needed softwares and how to get started (i.e. creating filels)
 - [ ] distribution of free course materials, related youtube channels, websites and blogs
+- [ ] do a test class
