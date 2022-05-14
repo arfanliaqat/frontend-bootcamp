@@ -57,8 +57,6 @@
 - less thann
 - greater than
 - non-breakable space
-- quote mark
-- apostrophe
 - ampersand
 
 ## Adding Links
