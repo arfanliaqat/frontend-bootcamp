@@ -87,3 +87,21 @@
 
 
 ## Forms
+
+- Text entry controls
+  - input, Single line text input
+  - textarea, Multi line text input
+  - disabled and readonly attributes
+- Specialized text entry controsl
+  - Password entry field
+  - eamil entry field
+- Submit and reset buttons
+- Radio and Checkboxes
+- Dropdown, select, optgroup
+- File upload button
+- Hidden control
+- date, time, datetime-local, month, week
+- Numerical Inputs
+  - Number
+  - Range
+- Color selector

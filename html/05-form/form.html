@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 - Form</title>
+  </head>
+  <body>
+    <form>
+      <!-- input -->
+      <div>
+        <label for="firstName">First Name</label>
+        <input
+          readonly
+          value="John doe"
+          id="firstName"
+          name="firstName"
+          size="50"
+          minlength="2"
+          maxlength="50"
+          placeholder="Please type your full name here"
+        />
+      </div>
+      <!-- textrea -->
+      <div>
+        <label for="bio">Bio</label>
+        <textarea disabled rows="5" cols="40" id="bio">John doe </textarea>
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" required />
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input id="password" type="password" />
+      </div>
+
+      <div>
+        <label for="male">Male</label>
+        <input id="male" name="gender" type="radio" />
+
+        <label for="female">Female</label>
+        <input id="female" name="gender" type="radio" />
+      </div>
+
+      <div>
+        <label for="topping1">Topping 1</label>
+        <input id="topping1" name="toppings" type="checkbox" />
+
+        <label for="topping2">Topping 2</label>
+        <input id="topping2" name="toppings" type="checkbox" />
+      </div>
+
+      <div>
+        <label for="city">City</label>
+        <select id="city">
+          <optgroup label="Main">
+            <option>Faisalabad</option>
+            <option>Lahore</option>
+            <option>Karachi</option>
+          </optgroup>
+          <optgroup label="Other">
+            <option>Faisalabad</option>
+            <option>Lahore</option>
+            <option>Karachi</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div>
+        <label for="image">File upload</label>
+        <input type="file" />
+      </div>
+
+      <div>
+        <input hidden id="user-1" value="123342" />
+      </div>
+
+      <div>
+        <label for="date">Date</label>
+        <input type="date" id="date" />
+      </div>
+
+      <div>
+        <label for="time">time</label>
+        <input type="time" id="time" />
+      </div>
+
+      <div>
+        <label for="datetime">Date time</label>
+        <input type="datetime-local" id="datetime" />
+      </div>
+
+      <div>
+        <label for="salary">Salary</label>
+        <input type="number" id="salary" min="0" max="450000" step="1000" />
+      </div>
+
+      <div>
+        <label for="age">Age</label>
+        <input type="range" min="0" max="110" id="age" />
+      </div>
+
+      <div>
+        <label for="color">Age</label>
+        <input type="color" id="color" />
+      </div>
+
+      <div>
+        <input type="submit" value="Login" />
+        <input type="reset" value="Clear All form" />
+
+        <button type="submit">Login</button>
+        <button type="reset">Clear All form</button>
+      </div>
+    </form>
+    <!-- disabled, readonly -->
+    <!-- password, email -->
+    <!-- submit and reset -->
+    <!-- radio, checkboxes -->
+    <!-- dropdown -->
+    <!-- file upload -->
+    <!-- hidden field -->
+    <!-- date-time fields -->
+    <!-- number and range -->
+    <!-- color picker -->
+  </body>
+</html>
