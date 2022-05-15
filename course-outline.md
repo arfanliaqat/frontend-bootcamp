@@ -77,4 +77,13 @@
 
 ## Tables
 
+- table
+- tr
+- td
+- thead
+- tfoot
+- colspan
+- rowspan
+
+
 ## Forms
