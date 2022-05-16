@@ -23,10 +23,13 @@
         />
       </div>
       <!-- textrea -->
+      <!-- disabled, readonly -->
       <div>
         <label for="bio">Bio</label>
         <textarea disabled rows="5" cols="40" id="bio">John doe </textarea>
       </div>
+
+      <!-- password, email -->
 
       <div>
         <label for="email">Email</label>
@@ -38,6 +41,7 @@
         <input id="password" type="password" />
       </div>
 
+      <!-- radio, checkboxes -->
       <div>
         <label for="male">Male</label>
         <input id="male" name="gender" type="radio" />
@@ -54,6 +58,7 @@
         <input id="topping2" name="toppings" type="checkbox" />
       </div>
 
+      <!-- dropdown -->
       <div>
         <label for="city">City</label>
         <select id="city">
@@ -70,15 +75,18 @@
         </select>
       </div>
 
+      <!-- file upload -->
       <div>
         <label for="image">File upload</label>
         <input type="file" />
       </div>
 
+      <!-- hidden field -->
       <div>
         <input hidden id="user-1" value="123342" />
       </div>
 
+      <!-- date-time fields -->
       <div>
         <label for="date">Date</label>
         <input type="date" id="date" />
@@ -94,6 +102,7 @@
         <input type="datetime-local" id="datetime" />
       </div>
 
+      <!-- number and range -->
       <div>
         <label for="salary">Salary</label>
         <input type="number" id="salary" min="0" max="450000" step="1000" />
@@ -104,11 +113,13 @@
         <input type="range" min="0" max="110" id="age" />
       </div>
 
+      <!-- color picker fifeld -->
       <div>
-        <label for="color">Age</label>
+        <label for="color">Color Picker</label>
         <input type="color" id="color" />
       </div>
 
+      <!-- submit and reset -->
       <div>
         <input type="submit" value="Login" />
         <input type="reset" value="Clear All form" />
@@ -117,15 +128,5 @@
         <button type="reset">Clear All form</button>
       </div>
     </form>
-    <!-- disabled, readonly -->
-    <!-- password, email -->
-    <!-- submit and reset -->
-    <!-- radio, checkboxes -->
-    <!-- dropdown -->
-    <!-- file upload -->
-    <!-- hidden field -->
-    <!-- date-time fields -->
-    <!-- number and range -->
-    <!-- color picker -->
   </body>
 </html>
