@@ -73,8 +73,6 @@
 - Email links
 - Telephone links
 
-## Adding images
-
 ## Tables
 
 - table
@@ -84,7 +82,6 @@
 - tfoot
 - colspan
 - rowspan
-
 
 ## Forms
 
@@ -105,3 +102,25 @@
   - Number
   - Range
 - Color selector
+
+## Adding images
+
+- Images basics
+- Raster vs Vector Image
+- Raster Images, how to make them and when to use them
+- JPEG vs PNG
+- Vector Images, how to make them and when to use them 
+- SVG
+
+## Audio
+
+## Video
+
+## Embedding
+
+- Youtube video
+- Google Map
+
+
+HTML Entity vs Element vs Tag
+
