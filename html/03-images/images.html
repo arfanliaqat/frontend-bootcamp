@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Images</title>
   </head>
-  <body>
+  <body style="background-color: black">
     <h1>Images</h1>
     <img
       title="This is my favourite image"
@@ -15,6 +15,24 @@
       width="500px"
     />
 
+    <img width="500px" src="apple.jpg" />
+    <img width="500px" src="apple-transparent.png" />
+
+    <h1>SVG as img tag</h1>
     <img src="./example.svg" />
+
+    <h1>Svg as text</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180">
+      <rect width="300" height="180" fill="purple" rx="20" ry="20" />
+      <text
+        x="40"
+        y="114"
+        fill="yellow"
+        font-family="'Verdana-Bold'"
+        font-size="72"
+      >
+        hello!
+      </text>
+    </svg>
   </body>
 </html>

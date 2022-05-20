@@ -108,7 +108,7 @@
 - Images basics
 - Raster vs Vector Image
 - Raster Images, how to make them and when to use them
-- JPEG vs PNG
+- jpeg/jpg vs png
 - Vector Images, how to make them and when to use them 
 - SVG
 
