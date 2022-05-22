@@ -73,3 +73,8 @@
 - px, pt, in(ches), mm(millimeter), cm(centimeters)
 - Relative Units
 - em, rem, vw, vh, vmin, vmax, percentage
+
+### Important Resources
+
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [CSS-TRICKS](https://css-tricks.com/)
