@@ -1,4 +1,4 @@
-# Frontend Bootcamp for Beginning to Professional
+# Frontend Bootcamp from Beginning to Professional
 
 ## Marking up text
 

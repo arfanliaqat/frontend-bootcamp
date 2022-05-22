@@ -1,0 +1,28 @@
+/*
+
+selectors {
+  property1: value1;
+  property2: value2;
+  .
+  .
+  .
+  propertyn: valuen;
+}
+
+*/
+
+p {
+  color: yellow;
+  padding: 14px;
+}
+
+h1 {
+  color: yellow;
+  font-size: 42pt;
+  font-family: sans-serif;
+}
+
+p,
+h1 {
+  color: yellow;
+}
