@@ -15,7 +15,9 @@ Note: Issue tracker is **ONLY** used for reporting bugs. New features should be 
 
 #### If you faced this bug in development, please make sure you have
 
-- proper local development setup running and you have a valid .env file (please see readme for detailed local setup instructions)
+- proper local development setup running and you have a valid `.env` file (please see [README]( for detailed local setup instructions)
+- pulled latest changes on develop branch and your current branch is based or rebased on development branch
+- restarted local dev server without warning but still facing the bug
 - working internet connection as we use remote instance of MongoDB
 - recreated index if your issue is related to programs or enrollments
 
