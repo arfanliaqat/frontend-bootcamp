@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setting default font size</title>
+    <style>
+      :root {
+        font-size: 0.75em;
+      }
+
+      @media (min-width: 800px) {
+        :root {
+          font-size: 0.875;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        :root {
+          font-size: 1em;
+        }
+      }
+
+      .alert {
+        /* add font-size */
+        font-size: 1rem;
+        padding: 1rem;
+        border-radius: 0.5em;
+        border: 1px solid #999;
+      }
+
+      .alert > h2 {
+        margin-top: 0;
+        font-size: 0.8em;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .panel.large {
+        font-size: 1.5rem;
+      }
+
+      .panel.smaller {
+        font-size: 0.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Media Queries</h1>
+    <p>
+      Media queries are rules which allow you to specify styles that should only
+      apply at certain screen sizes.
+    </p>
+    <div class="alert">
+      <h2>Order Confirmed!</h2>
+      <div class="alert-body">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus
+        autem doloribus sapiente. Aut, omnis! Non adipisci, repellat voluptatem
+        nemo molestias quas dicta ad veniam, perferendis aliquid iusto
+        reprehenderit dignissimos deleniti.
+      </div>
+    </div>
+    <ul>
+      <li>First rule specify font size for smaller screen</li>
+      <li>Then we use media queries to increase font size on bigger screens</li>
+      <li>
+        This will only work if unit is rem/em, it will not work if you specified
+        font-size using px
+      </li>
+      <li>
+        On smaller screen the font will be small and so will be margin and
+        padding and vice versa for bigger screens
+      </li>
+      <li>
+        If your client/manager want to increase/decrease font size for all
+        web-page you need to change it at only place and everything on your page
+        will be resized accordingly
+      </li>
+    </ul>
+  </body>
+</html>

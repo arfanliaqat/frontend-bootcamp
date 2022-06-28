@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font sizes with rem</title>
+    <style>
+      :root {
+        font-size: 1em;
+      }
+
+      ul {
+        font-size: 0.8em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Font sizes with rems</h1>
+    <ul>
+      <li>
+        Top Level
+        <ul>
+          <li>
+            Second Level
+            <ul>
+              <li>
+                Third Level
+                <ul>
+                  <li>
+                    Fourth Level
+                    <ul>
+                      <li>Fifth Level</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Solutions</h2>
+    <h3>Apply different font size to nested ul</h3>
+    <h3>Use rems for font sizing</h3>
+
+    <p>
+      Rems allows you to provide relative values without facing issues like em.
+      However it doesn't mean em is bad or you should always use rem
+    </p>
+
+    <h2>When to use ems or rems?</h2>
+    <p>
+      Use rems for font-sizes, ems for margin/padding element sizing and border
+      radius, and px for border
+    </p>
+    <ul>
+      <li>This will make font sizes predictable</li>
+      <li>Keep margin, padding scaled w.r.t font-size</li>
+      <li>
+        Pixels make sense for border, as they allow you to provide accurate
+        values for border
+      </li>
+    </ul>
+  </body>
+</html>
