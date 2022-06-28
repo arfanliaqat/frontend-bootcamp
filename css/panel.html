@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Making a panel using Rleative Units</title>
+    <style>
+      :root {
+        font-size: 0.75em;
+      }
+
+      @media screen and (min-width: 800px) {
+        :root {
+          font-size: 0.875rem;
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        :root {
+          font-size: 1rem;
+        }
+      }
+
+      .panel {
+        font-size: 1rem;
+        padding: 1em;
+        border-radius: 0.5em;
+        border: 1px solid #999;
+      }
+
+      .panel > h2 {
+        font-size: 0.8em;
+        margin-top: 0;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .panel.large {
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="panel">
+      <h2>Single-origin</h2>
+      <div class="panel-body">
+        We have built partnerships with small farms around the world to
+        hand-select beans at the peak of season. We then carefully roast in
+        <a href="/batch-size">small batches</a> to maximize their potential.
+      </div>
+    </div>
+
+    <div class="panel large">
+      <h2>Single-origin</h2>
+      <div class="panel-body">
+        We have built partnerships with small farms around the world to
+        hand-select beans at the peak of season. We then carefully roast in
+        <a href="/batch-size">small batches</a> to maximize their potential.
+      </div>
+    </div>
+  </body>
+</html>

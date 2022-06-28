@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin Padding</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      p {
+        text-align: justify;
+        background-color: green;
+        color: white;
+        /* padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 2em;
+        padding-bottom: 2em; */
+        padding: 1em;
+        padding: 1em 2em;
+        padding: 1em 2em 3em;
+        padding: 1em 2em 3em 4em;
+        margin: 2em;
+      }
+
+      /* 
+      padding: value <-- applies to all 4 sides
+      padding: value1 value2 <-- value1 applies to top/bottom and value2 applies to left/right sides
+      padding: value1 value2 value3 <-- value1 applies to top and value2 applies to left/right and third value will be applied to bottom
+      padding: value1 value2 value3 value4 <-- value1 -> top and value2 -> right and value3 > bottom and value4 > left 
+      */
+
+      .box.large {
+        padding: 1em;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box large">Lorem ipsum dolor sit amet.</div>
+    <div class="box large">Lorem ipsum dolor sit amet.</div>
+    <div class="box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+        consequatur tenetur officiis eaque laudantium. Sed, sapiente totam.
+        Excepturi placeat neque voluptates quam, labore nobis cumque error
+        obcaecati! Eligendi non ratione est aliquid, iure repudiandae. Vitae
+        deserunt, commodi consectetur, officiis quisquam et iste sunt officia
+        minus ea assumenda quaerat dolorum. Deserunt quidem perferendis
+        voluptates officiis harum, aut ullam voluptatem mollitia ipsa! Deleniti
+        ducimus facilis aspernatur aliquam porro hic dicta id, minus similique
+        nemo commodi sequi dignissimos nobis facere ex, repudiandae sunt ullam
+        enim accusantium veniam molestias beatae suscipit eius nam. Quod
+        quibusdam totam enim neque architecto inventore, cumque iste delectus,
+        suscipit commodi voluptas facilis aperiam esse. Quibusdam harum error
+        nobis culpa incidunt ipsum aspernatur cumque vero voluptate! Aliquid
+        necessitatibus vel eum numquam voluptates modi ea distinctio. Magni sit
+        nobis at cumque laboriosam consequatur sed corporis aliquid voluptatum
+        laborum. Fugiat repudiandae vero soluta doloribus cumque sunt. Provident
+        eius saepe eum dolorem odio error dicta minima voluptatum doloremque
+        deleniti cumque perferendis non id, adipisci doloribus commodi nobis
+        blanditiis, iste sit repellendus. Cupiditate debitis et voluptates quam
+        amet perferendis incidunt adipisci hic obcaecati! Doloribus hic
+        explicabo alias voluptatibus beatae illo molestias obcaecati libero et.
+        Sequi rem similique ea hic minus quis exercitationem consequatur magnam!
+      </p>
+    </div>
+  </body>
+</html>

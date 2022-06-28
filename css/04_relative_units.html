@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relative Units</title>
+    <style>
+      /* 
+      
+      when to use rem, em or pixels
+
+      rem for font-sizes
+      px for borders
+      ems for almost everything else i.e. marings, paddings, element sizing
+      
+      */
+
+      .box {
+        font-size: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box-small">Small</div>
+    <div class="box box-large">Large</div>
+
+    <!-- applying ems to font size -->
+    <div class="slogan">We love coffee</div>
+
+    <!-- applying ems to font-size and other props -->
+    <!-- shrinking font problem -->
+    <ul>
+      <li>
+        Top level
+        <ul>
+          <li>
+            Second Level
+            <ul>
+              <li>
+                Third level
+                <ul>
+                  <li>Fourth level</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- where to use ems margins paddings eleemnt sizing -->
+
+    <div class="panel">
+      <h2>Single-origin</h2>
+      <div class="panel-body">
+        We have built partnerships with small farms around the world to
+        hand-select beans at the peak of season. We then carefully roast in
+        <a href="/batch-size">small batches</a> to maximize their potential.
+      </div>
+    </div>
+  </body>
+</html>

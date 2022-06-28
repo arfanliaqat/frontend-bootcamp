@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specifity</title>
+    <style>
+      div {
+        background-color: black;
+        color: white;
+      }
+
+      .text-yellow {
+        color: yellow;
+      }
+
+      #logo {
+        color: green;
+      }
+
+      #header #logo {
+        color: blue;
+      }
+
+      #header #logo.text-yellow {
+        color: red;
+        background-color: yellow;
+      }
+
+      #header div#logo.text-yellow {
+        color: white;
+        background-color: blue;
+      }
+
+      #header #logo.text-yellow {
+        color: blue;
+        background-color: yellow;
+      }
+
+      /* 
+      ID, Classes, Element
+      0, 0, 1 => 001
+      0, 1, 0 => 010
+      1, 0, 0, => 100
+      2, 0, 0 => 200
+      2, 1, 0 => 210
+       */
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div id="logo" class="text-yellow">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ducimus
+        fugit voluptate eligendi blanditiis mollitia fugiat porro at, odio
+        soluta minima magnam tempora earum non saepe. Similique tempore facere
+        ab?
+      </div>
+    </div>
+  </body>
+</html>

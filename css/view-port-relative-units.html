@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Making a panel using Rleative Units</title>
+    <style>
+      .square {
+        width: 90vmin;
+        height: 90vmin;
+        background-color: #369;
+      }
+
+      :root {
+        font-size: calc(0.5em + 1vw);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="square"></div>
+
+    <div class="vw-font">This font is sized using vw</div>
+  </body>
+</html>
