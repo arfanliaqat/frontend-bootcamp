@@ -6,16 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Viewport-relative Units</title>
     <style>
-      :root {
+      /* :root {
         font-size: 2vw;
-      }
+      } */
 
       :root {
         font-size: calc(0.5em + 1vw);
       }
+
+      .alert {
+        /* add font-size */
+        font-size: 1rem;
+        padding: 1em;
+        border-radius: 0.5em;
+        border: 1px solid #999;
+      }
+
+      .alert > h2 {
+        margin-top: 0;
+        font-size: 0.8em;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .alert.larger {
+        font-size: 1.5rem;
+      }
+
+      .alert.smaller {
+        font-size: 0.8rem;
+      }
     </style>
   </head>
   <body>
+    <div class="alert">
+      <h2>Order Confirmed!</h2>
+      <div class="alert-body">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus
+        autem doloribus sapiente. Aut, omnis! Non adipisci, repellat voluptatem
+        nemo molestias quas dicta ad veniam, perferendis aliquid iusto
+        reprehenderit dignissimos deleniti.
+      </div>
+    </div>
+
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iste,
     delectus laboriosam labore obcaecati illo autem aperiam ratione, eaque est
     aspernatur consequuntur eius voluptas ab fuga quod maiores qui omnis
