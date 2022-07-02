@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables</title>
+    <style>
+      :root {
+        --main-font: Helvetica, Arial, sans-serif;
+        --brand-color: #e5ecd6;
+
+        --default-padding: 1.2em;
+
+        --primary-color: white;
+        --secondary-color: black;
+      }
+
+      body {
+        background-color: var(--brand-color);
+      }
+
+      .lead {
+        font-family: var(--main-font);
+        color: var(--logo-color, blue);
+        padding: var(--default-padding);
+      }
+
+      .dark {
+        --primary-color: black;
+        --secondary-color: white;
+      }
+
+      .panel {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+
+        font-size: 1rem;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        padding: 1em;
+        margin-bottom: 1em;
+      }
+    </style>
+  </head>
+  <body class="">
+    <h1>CSS Variables</h1>
+    <p>
+      Allows you to store common (changable) values at one place, which can be
+      changed by editing at only one place
+    </p>
+    <ul class="lead">
+      <li>Variables allow to have all dynamic values at one place</li>
+      <li>
+        Allow us to change value of something throughout all styles sheet by
+        changing at one place
+      </li>
+      <li>Maintainability</li>
+      <li>Ease of development</li>
+      <li>Ease of understanding (due to good naming)</li>
+      <li>Theming</li>
+    </ul>
+
+    <article class="panel">
+      <h2>My Light Panel</h2>
+      <section class="body">
+        This is a light panel. Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Reiciendis eveniet sequi natus vel quo, dicta
+        molestias, dolorem ex suscipit quos obcaecati alias fuga ipsam quaerat,
+        assumenda voluptate aut expedita laborum voluptatem! Quis quibusdam enim
+        expedita qui nam, nesciunt officiis veniam.
+      </section>
+    </article>
+
+    <section class="dark">
+      <article class="panel">
+        <h2>My Dark Panel</h2>
+        <section class="body">
+          This is a light panel. Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Reiciendis eveniet sequi natus vel quo, dicta
+          molestias, dolorem ex suscipit quos obcaecati alias fuga ipsam
+          quaerat, assumenda voluptate aut expedita laborum voluptatem! Quis
+          quibusdam enim expedita qui nam, nesciunt officiis veniam.
+        </section>
+      </article>
+    </section>
+  </body>
+</html>
