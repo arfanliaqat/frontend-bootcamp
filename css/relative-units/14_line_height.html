@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Line height</title>
+    <style>
+      body {
+        background-color: bisque;
+        line-height: 1.2; /* 32 * 1.2 = 38.4px */
+        /* line-height: 1.2em; 16 * 1.2 = 19.2px */
+      }
+      .lead {
+        /* line-height: 1.2 */
+        font-size: 2em; /* 32px */
+      }
+
+      .big-line-height {
+        line-height: 1.4;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Line height</h1>
+    <p>
+      Line height allows you to change vertical spacing between lines of text
+      elements
+    </p>
+
+    <p class="lead">
+      The technical word for CSS value which represents a distance measurements
+      (such as 5px, 1em, 3rem) is Length.
+      <strong>
+        Note: Percentages may look like lengthy but technically they are not
+        length.
+      </strong>
+      When an element has value defined using length (px, em, rem and so forth),
+      its computed value is inherited by child elements. If line-height is
+      specified with a unit, its value is calculated and that value is passed to
+      children. This may lead to problems as shown here
+    </p>
+    <ul>
+      <li>Some properties allow unitless value</li>
+      <li>Some example are line-height, z-index, and font-weight</li>
+      <li>
+        You can use unitless value 0 anywhere a length unit is required because
+        in this case unit doesn't matter
+      </li>
+      <li>
+        A unitless 0 can only be used for length properties such as padding,
+        border, and widths. It can not be used for angular or time based values
+      </li>
+      <li>The line height property accept both units and unitless values</li>
+      <li>It is recommended that you use unitless values for line-height</li>
+    </ul>
+  </body>
+</html>
