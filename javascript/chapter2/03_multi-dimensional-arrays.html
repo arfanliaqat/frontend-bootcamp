@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Multiple Values</title>
+    <style>
+      body {
+        background-color: bisque;
+      }
+      ul {
+        line-height: 1.5;
+      }
+    </style>
+    <script>
+      // 23, 45
+      // 56, 64
+      // 51, 66
+      // let allStudentMarks = [
+      //   [23, 45],
+      //   [56, 64],
+      //   [51, 66],
+      // ];
+
+      // console.log('allStudentsMarks', allStudentMarks);
+
+      // console.log('student 1 marks:', allStudentMarks[0]);
+      // console.log('student 1, Subject 1 marks:', allStudentMarks[0][0]);
+      // console.log('student 1, Subject 2 marks:', allStudentMarks[0][1]);
+
+      let allStudentMarks = [
+        [
+          ['Phy', 23],
+          ['Math', 45],
+        ],
+      ];
+
+      console.log('allStudentsMarks', allStudentMarks);
+      console.log('student 1 marks:', allStudentMarks[0]);
+      console.log(
+        `student 1, ${allStudentMarks[0][0][0]}  marks:`,
+        allStudentMarks[0][0][1]
+      );
+      console.log(
+        `student 1, ${allStudentMarks[0][1][0]}  marks:`,
+        allStudentMarks[0][1][1]
+      );
+    </script>
+  </head>
+  <body>
+    <h1>Multi dimensional Arrays</h1>
+  </body>
+</html>

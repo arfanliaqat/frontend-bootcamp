@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Essentials</title>
+    <style>
+      body {
+        background-color: bisque;
+      }
+      ul {
+        line-height: 1.5;
+      }
+    </style>
+    <script>
+      // calculate percentage and output to console
+      // 85 + 43 + 57 + 88
+      // let bio = 85;
+      // let phyiscs = 43;
+      // let chemistry = 57;
+      let anyMarks;
+      // a-z A-Z _ $ 123
+      // good variable names
+      // salary
+      // month
+      // percentile25
+      // $
+      // _
+      // _undercore
+      // invalid variable names
+      // 1month
+      // month wide = 100
+      // -month = 32
+      // #tag = 10;
+      // const = 10;
+      // let = 10
+
+      const totalMarks = 1100;
+
+      let obtainedMarks = 707;
+      let percentage = (obtainedMarks / totalMarks) * 100;
+      console.log(percentage);
+
+      const str1 = 'this is my string 1';
+      const str2 = 'this is my string 2';
+      const firstName = 'John';
+      // const lastName = "Doe";
+      const lastName = 'Doe';
+      const fullName = `John Doe`;
+
+      const greeting =
+        'Hello ' +
+        fullName +
+        ' welcome to our website your $age is ' +
+        percentage;
+
+      const greeting2 = `Hello ${fullName} welcome to our website your %age is ${percentage}`;
+
+      console.log(greeting);
+      console.log(greeting2);
+      const greet3 = "Welcome to 'Johns' website";
+      const greet4 = 'Welcome to "Pakistan" website';
+      const greet5 = 'Welcome \nStudents \nLine 3';
+      console.log(greet5);
+      const greet6 = 'Welcome 2\\5, this is a test';
+      console.log(greet6);
+
+      const num1 = 10;
+      const floatingNumber = 1.4;
+      const PI = 3.14;
+
+      const value = '10';
+
+      const isPassed = true;
+      const isDay = false;
+
+      let newVar;
+      const tax = null;
+    </script>
+  </head>
+  <body>
+    <h1>Essential JavaScript</h1>
+    <h2>Basic concepts of Javascript language</h2>
+    <ul>
+      <li>
+        Variables
+        <ul>
+          <li>Declaring variables</li>
+          <li>let, var and const</li>
+          <li>Naming variables</li>
+        </ul>
+      </li>
+
+      <li>
+        Primitive datatypes
+
+        <ul>
+          <li>String</li>
+          <li>Escape characters</li>
+          <li>Number</li>
+          <li>Boolean</li>
+          <li>Undefined</li>
+          <li>null</li>
+        </ul>
+      </li>
+      <li>
+        Analyzing and modifying data types
+        <ul>
+          <li>typeof operator</li>
+        </ul>
+      </li>
+      <li>
+        Operators
+        <ul>
+          <li>
+            Arithmetic Operators: addition, subtraction, division,
+            multiplications, exponentiation, modulus
+          </li>
+          <li>Unary operators: increment, decrement, prefix vs postfix</li>
+          <li>Assignment operators</li>
+          <li>
+            Comparison operators: equa, not equal, greater than, smaller than
+          </li>
+          <li>Logical operators: and, or, not</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

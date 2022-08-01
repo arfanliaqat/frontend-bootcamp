@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Multiple Values</title>
+    <style>
+      body {
+        background-color: bisque;
+      }
+      ul {
+        line-height: 1.5;
+      }
+    </style>
+    <script>
+      let std1Marks = [45, 76, 58, 73, 67];
+      console.log('std1Marks', std1Marks);
+
+      let std2Marks = new Array(5);
+      std2Marks[0] = 54;
+      std2Marks[1] = 55;
+      std2Marks[2] = 85;
+      std2Marks[3] = 59;
+      std2Marks[4] = 75;
+
+      console.log('std2Marks', std2Marks);
+
+      let arr1 = [10];
+      let arr2 = new Array(10);
+
+      console.log(arr1);
+      console.log(arr2);
+
+      console.log('Subject 1', std1Marks[0]);
+
+      std1Marks[0] = 54;
+
+      console.log('std1Marks', std1Marks);
+
+      let fruits = ['Apple', 'Orange', 'Peach', 'Mango', 'Grape'];
+
+      console.log('Total fruits count: ', fruits.length);
+    </script>
+  </head>
+  <body>
+    <h1>Arrays and their properties</h1>
+    <ul>
+      <li>Two ways to create arrays</li>
+      <li>Difference bw both</li>
+      <li>Accessing array elements</li>
+      <li>Overwriting array elements</li>
+      <li>Built-in length property</li>
+    </ul>
+  </body>
+</html>

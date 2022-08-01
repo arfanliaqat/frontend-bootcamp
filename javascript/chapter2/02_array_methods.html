@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Multiple Values</title>
+    <style>
+      body {
+        background-color: bisque;
+      }
+      ul {
+        line-height: 1.5;
+      }
+    </style>
+    <script>
+      let students = ['Ali', 'Rehan', 'Hamza', 'Shabbir'];
+      // console.log('before adding: ', students);
+
+      students.push('Hamza');
+
+      // console.log('after adding: ', students);
+
+      // students.splice(2, 0, 'Nadeem');
+      // console.log('after splicing: ', students);
+
+      // let removedStd = students.pop();
+      // console.log('removed student: ', removedStd);
+
+      // console.log('after removing:', students);
+
+      // students.splice(1, 1);
+
+      // console.log('after removing middle:', students);
+
+      // students.shift();
+
+      // console.log('after shift: ', students);
+
+      // delete students[0];
+      // console.log('after delete: ', students);
+
+      const searchResult1 = students.find(function (student) {
+        return student[0] === 'H';
+      });
+      console.log('searchResult1', searchResult1);
+
+      const searchResult2 = students.findIndex(function (student) {
+        return student[0] === 'H';
+      });
+      console.log('searchResult2', searchResult2);
+
+      const searchResult3 = students.lastIndexOf('Hamza');
+      console.log('searchResult3', searchResult3);
+
+      let arr1 = ['z', 'c', 'v', 'k'];
+      let arr2 = [100, 32, 543, 1, 50];
+
+      console.log('sorted arr1:', arr1.sort());
+      console.log('sorted arr2:', arr2.sort());
+      console.log(
+        'sorted arr2 (numeric):',
+        arr2.sort(function (a, b) {
+          return a - b;
+        })
+      );
+
+      console.log('sorted arra1 (descending): ', arr1.sort().reverse());
+    </script>
+  </head>
+  <body>
+    <h1>Array methods</h1>
+    <ul>
+      <li>Adding and replacing elements, push, splice</li>
+      <li>Deleting elements, pop, shift, splice, using delete operator</li>
+      <li>finding elements, find, indexOf, lastIndexOf</li>
+      <li>Sorting</li>
+      <li>Reversing</li>
+    </ul>
+  </body>
+</html>
