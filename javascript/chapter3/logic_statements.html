@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const a = 100;
+      const b = 20;
+      // if ( condition ) {
+      //  run if condition true
+      // } else {
+      //  run if condition is false
+      // }
+      if (a > b) {
+        console.log('a is greater than b');
+      } else {
+        console.log('a is less than b');
+      }
+
+      const marks = 40;
+      // if ( condition 1) {
+      //  run if condition true
+      // } else if( condition 2) {
+      //  run if condition is false
+      // } else {
+      // condition
+      // }
+
+      if (marks > 90) {
+        console.log('A');
+      } else if (marks > 80) {
+        console.log('B');
+      } else if (marks > 70) {
+        console.log('C');
+      } else if (marks > 50) {
+        console.log('D');
+      } else {
+        console.log('F');
+      }
+
+      const weather = 'wet';
+      const hungary = true;
+
+      if (weather === 'dry' && hungary === true) {
+        console.log('lets eat out today');
+      } else if (weather === 'wet' && hungary === true) {
+        console.log('lets cook something special');
+      } else {
+        console.log('Not sure what to do');
+      }
+
+      // ternery operator
+      /*
+        if (a > b) {
+        console.log('a is greater than b');
+      } else {
+        console.log('a is less than b');
+      }
+      */
+
+      // condition ? if true code : if false code;
+      console.log('terner operator');
+      a > b
+        ? console.log('a is greater than b')
+        : console.log('a is less than b');
+
+      // switch statement
+      const city = 'Quetta';
+
+      switch (city) {
+        case 'Lahore':
+        case 'Faisalabad':
+          console.log('You are in Punjab');
+          break;
+        case 'Karachi':
+          console.log('You are in Sindh');
+          break;
+        case 'Islamabad':
+          console.log('You are in Capital');
+        default:
+          console.log('You are not in a branch city');
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Logic statements</h1>
+    <ul>
+      <li>if and if else statement</li>
+      <li>using and, or operators</li>
+      <li>else if</li>
+      <li>ternery operator</li>
+      <li>switch statement</li>
+    </ul>
+  </body>
+</html>

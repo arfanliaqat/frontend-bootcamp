@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops in JavaScript</title>
+    <script>
+      /*
+      while(some condition) {
+        run code here until condition is true
+        it will stop once condition is false
+      }
+      */
+
+      // 1 to 10 print in console
+
+      // let n = 1;
+      // while (n <= 10) {
+      //   console.log(n);
+      //   ++n;
+      // }
+
+      /*
+      do {
+        run code here until condition is true
+        it will stop once condition is false
+      }while(some condition)
+      */
+
+      // let n = 1;
+      // do {
+      //   console.log('do-while', n);
+      //   ++n;
+      // } while (n <= 10);
+
+      /*
+        for(counter; condition; increment/decrement) {
+          loop body
+        }
+      */
+
+      // for (let i = 1; i <= 10; i++) {
+      //   console.log('for i =', i);
+      // }
+
+      // will run 1000 time
+      // for (let i = 0; i < 10; i++) {
+      //   for (let j = 0; j < 10; j++) {
+      //     for (let k = 0; k < 10; k++) {
+      //       console.log('i, j, k', i, j, k);
+      //     }
+      //   }
+      // }
+
+      // will run 30 time
+      // for (let i = 0; i < 10; i++) {
+      //
+      // }
+      // for (let j = 0; j < 10; j++) {
+      //
+      //  }
+      //  for (let k = 0; k < 10; k++) {
+      //      console.log('i, j, k', i, j, k);
+      //  }
+
+      // let students = ['Jack', 'Sam', 'Luke'];
+
+      // let i = 0;
+      // while (i < students.length) {
+      //   console.log(`(while) students[${i}]`, students[i]);
+      //   i++;
+      // }
+
+      // i = 0;
+      // do {
+      //   console.log(`(do-while) students[${i}]`, students[i]);
+      //   i++;
+      // } while (i < students.length);
+
+      // for (i = 0; i < students.length; i++) {
+      //   console.log(`(for) students[${i}]`, students[i]);
+      // }
+
+      /*
+      for (let/const tempVariable of Array) {
+        loop body
+      }
+      */
+      // for (const student of students) {
+      //   console.log(`(for of) students = `, student);
+      // }
+
+      /* 
+      for (let/const tempVariable in Object) {
+        loop body
+      }
+      */
+
+      // let person = { firstName: 'Jack', lastName: 'Jim', age: 10 };
+
+      // for (let key in person) {
+      //   console.log('<h1>', key, '</h1>', '<h2>', person[key], '</h2>');
+      // }
+
+      // converting object to array
+
+      // // Object.keys
+      // console.log('keys', Object.keys(person)); // ['firstName', 'lastName', 'age']
+      // // Object.values
+      // console.log('values', Object.values(person)); // ['Jack', 'Jim', 10]
+      // // Object.entries
+      // console.log('entries', Object.entries(person)); // [['firstName', 'Jack'], ['lastName', 'Jim'], ['age', 10]]
+
+      // find a number which divides as a whole on 5, 7, 10
+      // for (let i = 1; i < 100; i++) {
+      //   console.log(`checking ${i}`);
+      //   if (i % 5 === 0 && i % 7 === 0 && i % 10 === 0) {
+      //     console.log(`we have found the magic number, it is ${i}`);
+      //     break;
+      //   }
+      //   console.log(`checked ${i}`);
+      // }
+
+      // find a number which divides as a whole on 5 but not on 10
+      for (let i = 1; i < 100; i++) {
+        if (i % 10 === 0) {
+          continue;
+        }
+        if (i % 5 === 0) {
+          console.log(`we have found the magic number, it is ${i}`);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Loops in JavaScript</h1>
+    <h2>While loop</h2>
+    <h2>Do While loop</h2>
+    <h2>For loop</h2>
+    <h2>Nested loop</h2>
+    <h2>For of (loops and arrays)</h2>
+    <h2>For in (loops and objects)</h2>
+    <h2>Break and continue</h2>
+  </body>
+</html>

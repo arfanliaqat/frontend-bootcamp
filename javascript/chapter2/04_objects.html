@@ -13,7 +13,35 @@
         line-height: 1.5;
       }
     </style>
-    <script></script>
+    <script>
+      // phy, bio, chem
+      let marksArray = [54, 35, 53];
+
+      let marksObject = {
+        bio: 35,
+        phy: 54,
+        chem: 53,
+      };
+
+      const human = {
+        name: 'John',
+        age: '28',
+        address: '53rd street no town',
+      };
+
+      console.log('marksObject', marksObject);
+
+      console.log('phy marks', marksObject['phy']);
+
+      human['age'] = 24;
+      console.log('human', human);
+
+      human['favoriteBook'] = 'ABC';
+      console.log('human', human);
+
+      delete human['favoriteBook'];
+      console.log('human', human);
+    </script>
   </head>
   <body>
     <h1>Objects in JavaScript</h1>

@@ -13,7 +13,49 @@
         line-height: 1.5;
       }
     </style>
-    <script></script>
+    <script>
+      const human = {
+        name: 'John',
+        age: '28',
+        favoriteFruits: ['Mango', 'Orange', 'Apple'],
+        address: {
+          state: 'Punjab',
+          city: 'Faisalabad',
+          street: 1231,
+        },
+      };
+
+      console.log(human['address']['state']);
+      console.log(human.address.state);
+
+      console.log(human.address.city);
+
+      console.log(human.favoriteFruits[0]);
+
+      const students = [
+        {
+          name: 'Jim',
+          subject: 'phy',
+        },
+        { name: 'Allen' },
+      ];
+
+      console.log('student subject', students[0].subject);
+
+      const employees = [
+        {
+          'first name': 'Luke',
+          favoriteBooks: [{ name: 'JS Programming 101', price: 10 }],
+        },
+        {
+          name: 'Skywalker',
+          favoriteBooks: [{ name: 'TS Programming 101', price: 15 }],
+        },
+      ];
+
+      // JSON => Javascript Object Notation
+      const json = {};
+    </script>
   </head>
   <body>
     <h1>Objects in JavaScript</h1>
